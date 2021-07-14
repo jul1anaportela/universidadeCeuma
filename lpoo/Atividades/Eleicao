@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package eleicao;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Juliana.Portela
+ */
+public class Eleicao {
+   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("=============================");
+        System.out.println("            ELEIÇÃO             ");
+        System.out.println("=============================");
+        System.out.print("Digite a sua idade: ");
+        int idade = sc.nextInt();
+        
+        if(idade<16){
+            System.out.println("Você não pode votar");
+        }else if(idade == 16 || idade == 17 || idade > 65){
+            System.out.println("Seu voto é facultativo");
+        }else if(idade >=18 && idade <=65){
+            System.out.println("Seu voto é obrigatório");
+        }
+    }
+    
+}

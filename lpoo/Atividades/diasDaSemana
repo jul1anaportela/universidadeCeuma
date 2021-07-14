@@ -1,0 +1,68 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package diasdasemana;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Juliana.Portela
+ */
+public class Diasdasemana {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("=======================================");
+        System.out.println("            DIAS DA SEMANA              ");
+        System.out.println("=======================================");
+        System.out.println("você tem 7 dias na semana, escolha um: ");
+        System.out.println("");
+        int dia = sc.nextInt();
+        
+        
+        switch(dia){
+            case 1:
+                System.out.println("");
+                System.out.println("DOM");
+                System.out.println("não é dia útil");
+                break;
+            case 2:
+                System.out.println("");
+                System.out.println("SEG");
+                System.out.println("dia util");
+                break;
+            case 3:
+                System.out.println("");
+                System.out.println("TER");
+                System.out.println("dia util");
+                break;
+            case 4:
+                System.out.println("");
+                System.out.println("QUA");
+                System.out.println("dia util");
+                break;
+            case 5:
+                System.out.println("");
+                System.out.println("QUI");
+                System.out.println("dia util");
+                break;
+            case 6:
+                System.out.println("");
+                System.out.println("SEX");
+                System.out.println("dia util, porém SEXTOU!");
+                break;
+            case 7:
+                System.out.println("");
+                System.out.println("SAB");
+                System.out.println("não é dia útil");
+                break;
+            default:
+                System.out.println("");
+                System.out.println("dia inválido!");
+        }
+    }
+    
+}
